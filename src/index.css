@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #F5F0E8;
+  --ink:   #1A1714;
+  --gold:  #C4A97D;
+  --muted: #8A8178;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--cream); color: var(--ink); overflow-x: hidden; font-family: 'Inter', sans-serif; }
+
+.font-display { font-family: 'Cormorant Garamond', serif; }
+.font-body    { font-family: 'Inter', sans-serif; }
+
+/* chamfered button */
+.btn-chamfer {
+  clip-path: polygon(12px 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%, 0% 12px);
+}
